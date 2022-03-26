@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+#weather-title {
+    background-color:blue;
+    color: white;
+    margin-top: 2%;
+    text-align: center;
+
+}
