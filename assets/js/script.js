@@ -6,7 +6,7 @@ var datePrint = month + "/" + date + "/" + year;
 var lat = "";
 var lon = "";
 var apiUrlLatLon = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&exclude=minutely,hourly&appid=e1a4ed0961c7ec0f2b9fbd50ae84099c";
-var apiUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + cityInput + "&limit=1&appid=e1a4ed0961c7ec0f2b9fbd50ae84099c";
+var apiUrl = "https://api.openweathermap.org/geo/1.0/direct?q=" + cityInput + "&limit=1&appid=e1a4ed0961c7ec0f2b9fbd50ae84099c";
 var cityInput = "";
 var temp = "";
 var wind = "";
@@ -18,7 +18,7 @@ var fetchWeatherData = function(lat, lon) {
     fetch(apiUrlLatLon).then(function(response) {
         response.json().then(function(data) {
             var icon = data.daily[0].weather[0].icon;
-            var iconUrl = "http://openweathermap.org/img/w/" + icon + ".png";
+            var iconUrl = "https://openweathermap.org/img/w/" + icon + ".png";
             var temp = data.current.temp;
             var wind = data.current.wind_speed;
             var humidity = data.current.humidity;
@@ -56,7 +56,7 @@ var fetchWeatherData = function(lat, lon) {
                 $(`#five-day-${i}`).append(datePrintFiveDayEl);
                     
                 var iconFiveDay = data.daily[i].weather[0].icon;
-                var iconFiveDayUrl = "http://openweathermap.org/img/w/" + iconFiveDay + ".png";
+                var iconFiveDayUrl = "https://openweathermap.org/img/w/" + iconFiveDay + ".png";
                 var iconImageFiveDayEl = $("<img>").attr("src", iconFiveDayUrl);
                 $(`#five-day-${i}`).append(iconImageFiveDayEl);
 
