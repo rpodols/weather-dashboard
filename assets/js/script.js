@@ -77,7 +77,7 @@ var fetchWeatherData = function(lat, lon) {
 };
 
 var fetchApiInfo = function(cityInput) {
-    var apiUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + cityInput + "&limit=1&appid=e1a4ed0961c7ec0f2b9fbd50ae84099c";
+    var apiUrl = "https://api.openweathermap.org/geo/1.0/direct?q=" + cityInput + "&limit=1&appid=e1a4ed0961c7ec0f2b9fbd50ae84099c";
     fetch(apiUrl).then(function(response) {
         if (response.ok) {
         response.json().then(function(data) {
@@ -100,7 +100,7 @@ var fetchApiInfo = function(cityInput) {
 };
 
 var fetchApiInfoOld = function(cityInput) {
-    var apiUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + cityInput + "&limit=1&appid=e1a4ed0961c7ec0f2b9fbd50ae84099c";
+    var apiUrl = "https://api.openweathermap.org/geo/1.0/direct?q=" + cityInput + "&limit=1&appid=e1a4ed0961c7ec0f2b9fbd50ae84099c";
     fetch(apiUrl).then(function(response) {
         if (response.ok) {
         response.json().then(function(data) {
