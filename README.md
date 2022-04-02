@@ -18,6 +18,4 @@ Starting from scratch, this challenge required writing code to do the following:
 
 ## Link to Project & Screenshot
 ![Portfolio Screenshot)](/assets/images/applicationImage.png)
-[Click here to view the project!](https://rpodols.github.io/weather-dashboard/
-
-)
+[Click here to view the project!](https://rpodols.github.io/weather-dashboard/)
